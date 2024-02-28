@@ -4,12 +4,12 @@ const api = axios.create({
   baseURL: 'https://farmaciaapi-0496.onrender.com/'
 })
 
-export const cadastrarUsuario = async(url: string, dados: Object, setDados: Function) => {
+export const cadastrarCategoria = async(url: string, dados: Object, setDados: Function) => {
   const resposta = await api.post(url, dados)
   setDados(resposta.data)
 }
 
-export const login = async(url: string, dados: Object, setDados: Function) => {
+export const Categoria = async(url: string, dados: Object, setDados: Function) => {
   const resposta = await api.post(url, dados)
   setDados(resposta.data)
 }
